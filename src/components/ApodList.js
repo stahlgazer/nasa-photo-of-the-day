@@ -16,17 +16,16 @@ export default function ApodList() {
                 console.log("the data was not returned", error);
             });
     }, []);
-    
+
     return (
         <div className="apod-list">
-                    <ApodCard
-                        key={myApod.data}
-                        title={myApod.title}
-                        explanation={myApod.explanation}
-                        date={myApod.date}
-                        url={myApod.hdurl}
-                    />
-                ;
-            
+            <ApodCard
+                key={myApod.data}
+                title={myApod.title}
+                explanation={myApod.explanation}
+                date={myApod.date}
+                url={myApod.hdurl}
+            />
         </div>
-    )};
+    )
+};
